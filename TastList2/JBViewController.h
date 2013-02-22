@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface JBViewController : UIViewController
+@interface JBViewController : UIViewController<UITextFieldDelegate>
+
+@property (strong, nonatomic) IBOutlet UITextField *textField;
+
+@property (strong, nonatomic) IBOutlet UILabel *label;
+
+- (IBAction)buttonPressed:(UIButton *)sender;
 
 @end
